@@ -59,11 +59,23 @@ app.get('/', (req, res)=>{
     });
 });
 
+//regi url
 app.get('/about', (req, res)=>{
     //res.send('About Page');
     //pass the dynamic data
     res.render('about.hbs', {
         pageTitle: 'About Page',
+       
+        
+    });
+});
+
+
+app.get('/projects', (req, res)=>{
+    //res.send('About Page');
+    //pass the dynamic data
+    res.render('projects.hbs', {
+        pageTitle: 'Projects',
        
         
     });
